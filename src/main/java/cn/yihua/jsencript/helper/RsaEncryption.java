@@ -213,14 +213,12 @@ public class RsaEncryption {
     }
 
 
-    public static String getPrivateKey(Map<String, Object> keyMap)
-            throws Exception {
+    public static String getPrivateKey(Map<String, Object> keyMap) {
         Key key = (Key) keyMap.get(PRIVATE_KEY);
         return new String(Base64.encodeBase64(key.getEncoded()));
     }
 
-    public static String getPublicKey(Map<String, Object> keyMap)
-            throws Exception {
+    public static String getPublicKey(Map<String, Object> keyMap) {
         Key key = (Key) keyMap.get(PUBLIC_KEY);
         return new String(Base64.encodeBase64(key.getEncoded()));
     }
