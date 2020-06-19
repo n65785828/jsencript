@@ -225,18 +225,6 @@ public class RsaEncryption {
         return new String(Base64.encodeBase64(key.getEncoded()));
     }
 
- /*   public static class Base64Utils {
-
-        public static byte[] decode(String base64) throws Exception {
-            return org.apache.commons.codec.binary.Base64.decodeBase64(base64.getBytes());
-        }
-
-
-        public static String encode(byte[] bytes) throws Exception {
-            return new String(org.apache.commons.codec.binary.Base64.encodeBase64(bytes));
-        }
-
-    }*/
 
 
 }
