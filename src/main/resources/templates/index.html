@@ -5,6 +5,12 @@
     <title>Title</title>
     <script src="/jquery-3.5.1.min.js"></script>
     <script src="/jsencrypt-2.3.1.min.js"></script>
+<!--   此js用于长字符串加密
+<script src="/jsencrypt.js"></script>
+ var encrypt = new JSEncrypt();
+encrypt.setPublicKey('-----BEGIN PUBLIC KEY-----' + PUBLIC_KEY + '-----END PUBLIC KEY-----');
+var encryptString = encrypt.encryptLong(string);
+-->
     <script>
         var PUBLIC_KEY = '[[${PUBLIC_KEY}]]';
         function submitForm() {
